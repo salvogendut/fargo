@@ -1,0 +1,14 @@
+\$TTL	86400 ; 24 hours could have been written as 24h or 1d
+; $TTL used for all RRs without explicit TTL value
+$ORIGIN @DOMAIN.
+@  1D  IN  SOA ns1.@DOMAIN.  (
+			      2002022401 ; serial
+			      3H ; refresh
+			      15 ; retry
+			      1w ; expire
+			      3h ; nxdomain ttl
+			     )
+       IN  NS     ns1.@DOMAIN. ; in the domain
+       IN  MX  10 mail.@DOMAIN. ; external mail provider
+; server host definitions
+@VM    IN  A      @VMIP  ;name server definition     
