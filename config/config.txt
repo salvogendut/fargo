@@ -1,0 +1,8 @@
+PROJECT=banana
+DOMAIN=example.com
+PREFIX=172.24
+VMS=node1,node2,node3
+VMIPS=10,20,30
+DNS=yes
+DHCP=yes
+SCENARIO=yes
